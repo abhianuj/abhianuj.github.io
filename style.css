@@ -1,0 +1,127 @@
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+}
+
+body{
+    position: relative;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #211E3A;
+    color: #efefef;
+    line-height: 1.5rem;
+}
+#holder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #30353A;
+    line-height: 1.7rem;
+    font-family: 'Source Code Pro';
+    font-size: 0.8rem;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.2s;
+}
+
+/*hiding the scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/*header*/
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 34px;
+    padding-left: 2.5vh;
+    background-color: #E0E8F0;
+}
+/*buttons*/
+.button {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin: 10px 2px;
+    display: inline-block;
+    border-radius: 8px;
+    background: #efefef;
+    cursor: pointer;
+}
+#maximize{
+    background-color: #3bb662;
+}
+#minimize{
+    background-color: #e5c30f;
+}
+#close{
+    background-color: #e75448;
+}
+
+/*cli*/
+#cli{
+    padding: 2vh 0 0 2vh;
+}
+
+/*input, label*/
+#typeOnThis{
+    background: none;
+    border: none;
+    caret-color: #ffffff;
+    color: #efefef;
+    font-family: inherit;
+    padding: 0;
+}
+#typeOnThis:focus{
+    outline: none;
+}
+.label{
+    color: #95F584;
+}
+.label .arrow{
+    color: deeppink;
+    font-weight: bold;
+}
+
+/*
+    in cli
+*/
+/*help*/
+#help span{
+    font-weight: bold;
+}
+/*ls*/
+.ls{
+    width: 280px;
+    height: auto;
+}
+.ls span{
+    padding-left: 2.8vh;
+}
+.ls .folder{
+    color: darkturquoise;
+}
+/*links*/
+#cliContent a{
+    color: rgb(120,120,225);
+    font-weight: bold;
+    display: block;
+}
+
+/*bottom*/
+#about{
+    position: absolute;
+    bottom: 5vh;
+    font-family: 'Pangolin';
+    line-height: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
