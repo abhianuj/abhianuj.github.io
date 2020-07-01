@@ -101,7 +101,7 @@ let work = {
     cat: function(currentPath){
         if(currentPath.currPath=="root"){
             if(currentPath.text.split(' ')[1]=="about.txt"){
-                cliContent.innerHTML += '<div> Hello, I am Abhijeet and I am a cs guy who is passionate about web, data science and hacking. I love to do everything from scratch. Teaching is one of my hobbies. Currently I am a scholar at SAP labs.</div>';
+                cliContent.innerHTML += '<div> Hello, I am Abhijeet and I am a cs guy who is passionate about web, data science and hacking. I love to do everything from scratch. Teaching is one of my hobbies.</div>';
             }else if(currentPath.text.split(' ')[1]=="contact.txt"){
                 cliContent.innerHTML += '<div>Abhijeet Kumar<br>Address: Ranchi, Jharkhand, INDIA.<br>Phone no.: +91 7004784764<br>Email: abhi.anuj100@gmail.com</div>';
             }else {
