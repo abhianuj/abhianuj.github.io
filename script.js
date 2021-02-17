@@ -108,7 +108,7 @@ let work = {
                 cliContent.innerHTML += '<div>Error: File not found!</div>';
             }
         }else if(currentPath.currPath=="root/skills"){
-            if(currentPath.text.split(' ')[1]=="proficient.txt"){
+            if(currentPath.text.split(' ')[1]=="profecient.txt"){
                 cliContent.innerHTML += '<ul><li>HTML5/CSS3</li><li>javaScript</li><li>C++</li><li>Java</li><li>Python</li></ul>';
             }else if(currentPath.text.split(' ')[1]=="familiar.txt"){
                 cliContent.innerHTML += '<ul><li>Bash</li><li>Git</li><li>Node.js</li><li>Open UI5</li><li>PWA</li></ul>';
